@@ -1,0 +1,121 @@
+body{
+    background-image: linear-gradient(rgba(58, 58, 156, 0.8), rgba(58, 58, 156, 0.8)) , url(imagenes/backgroud.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('imagenes/backgroud.jpeg'); /* Aquí va la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Envía el fondo detrás del contenido */
+}
+
+.background-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 58, 156, 0.8); /* Color con opacidad */
+    z-index: 1; /* Overlay encima de la imagen */
+    opacity: 0.8; /* Nivel de opacidad del color */
+}
+
+
+
+
+
+h1, h2{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.container-form{
+    background-color: #282c34;
+    align-content: center;
+    justify-content: center;
+    width: 700px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.survey-form{
+    justify-content: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.label-name, .label-email, .label-age, .label-role, .label-feature{
+    color: white;
+    display: flex;
+}
+
+.input-name, .input-email, .input-age, .select-role, .select-feature{
+    width: 98%;
+    height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    margin-top: 15px;
+    border-radius: 5px;
+    border-color: white;
+    background-color: white;
+}
+
+
+
+.section-recommendation, .section-favorite, .section-improve, .comment-section{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+
+
+.radio-definitely, .radio-maybe, .radio-not-sure, .checkbox-frontend, .checkbox-backend, .checkbox-data-viz, .checkbox-challenges, .checkbox-open-source, .checkbox-help, .checkbox-videos, .checkbox-meetups, .checkbox-wiki, .checkbox-forum, .checkbox-courses{
+    margin-top: 10px;
+}
+
+
+
+.input-comment{
+    width: 99%;
+    height: 90px;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border-color: white;
+    background-color: white;
+}
+
+
+
+.submit-btn{
+    margin-top: 25px;
+    width: 100%;
+    height: 40px;
+    background-color: green;
+    border-color: green;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}

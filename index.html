@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+    <h1>Survey Platform Feedback</h1>
+    <h2>We appreciate your time in helping us improve the platform</h2>
+
+    <div class="background-overlay"></div>
+
+    <div class="container-form">
+        
+<form action="" class="survey-form">
+    <label class="label-name"><b>Full Name</b></label><br>
+    <input class="input-name" type="text" placeholder="Enter your name"><br>
+    <label class="label-email"><b>Email Address</b></label><br>
+    <input class="input-email" type="email" name="email" placeholder="Enter your email"><br>
+    <label class="label-age"><b>Age (Optional)</b></label><br>
+    <input class="input-age" type="number" placeholder="Age"><br>
+    <label class="label-role" for="role"><b>What best describes your current role?</b></label><br> 
+    
+    <select class="select-role" id="role">
+        <option value="student">Student</option>
+        <option value="teacher">Full time job</option>
+        <option value="developer">Full time learner</option>
+        <option value="designer">Prefer not to say</option>
+        <option value="other">Other</option>
+    </select>
+    
+
+</form>
+
+<div class="section-recommendation">
+    <b><p>Would you recommend this platform to a friend?</p></b>
+    <input class="radio-definitely" name="recommend" type="radio"><b>Definitely</b> <br>
+    <input class="radio-maybe" name="recommend" type="radio"><b>Maybe</b> <br>
+    <input class="radio-not-sure" name="recommend" type="radio"><b>Not Sure</b> <br>
+</div><br>
+
+
+
+<div class="section-favorite">
+    <label class="label-feature"><b>What is your favorite feature of the platform?</b></label><br><br>
+    <select class="select-feature" id="feature">
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="open-source">Open Source</option>
+    </select>
+</div>
+
+
+
+<div class="section-improve">
+    <p><b>What would you like to see improved? (Check all that apply)</b></p>
+
+    <input class="checkbox-frontend" name="improve" type="checkbox"><b>Front-end Projects</b> <br>
+    <input class="checkbox-backend" name="improve" type="checkbox"><b>Back-end Projects</b> <br>
+    <input class="checkbox-data-viz" name="improve" type="checkbox"><b>Data Visualization</b> <br>
+    <input class="checkbox-challenges" name="improve" type="checkbox"><b>Challenges</b> <br>
+    <input class="checkbox-open-source" name="improve" type="checkbox"><b>Open Source Community</b> <br>
+    <input class="checkbox-help" name="improve" type="checkbox"><b>Help Rooms</b> <br>
+    <input class="checkbox-videos" name="improve" type="checkbox"><b>Videos</b> <br>
+    <input class="checkbox-meetups" name="improve" type="checkbox"><b>City Meetups</b> <br>
+    <input class="checkbox-wiki" name="improve" type="checkbox"><b>Wiki</b> <br>
+    <input class="checkbox-forum" name="improve" type="checkbox"><b>Forum</b> <br>
+    <input class="checkbox-courses" name="improve" type="checkbox"><b>Additional Courses</b> <br>
+</div>
+
+
+
+<div>
+    <p class="comment-section"><b>Any comments or suggestions?</b></p>
+
+    <input class="input-comment" type="text" id="comment" name="comment" placeholder="Write here">
+</div>
+
+
+
+<div>
+    <button class="submit-btn"><b>Submit</b></button>
+</div>
+    </div>
+
+
+</body>
+</html>
